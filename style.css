@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins','sans-serif';
+    font-weight: 300;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5% 5%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    background-color: #11141a;
+}
+
+header img{
+    width: 100px;
+    height: 40%;
+}
+
+.heading{
+    font-size: 110%;
+    width: 100vw;
+    color: rgb(105, 93, 216);
+    font-weight: 500; 
+    text-shadow: .5px .5px 2px #0ef;
+    margin-top: -7%;
+}
+
+.logo{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+nav a{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    margin-left: 35px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+nav a:hover,
+nav a.active{
+    color: #0ef;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #020624;
+    font-size: 100px;
+    font-weight: 700;
+    color: white;
+    padding: 10%;
+}
+
+section:nth-child(odd){
+    background-color: #070411;
+}
+
+/* Section 1 */
+#home{
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile_container{
+    display: flex;
+}
+.profile_pic{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name{
+    margin-top: -90%;
+    font-size: 45%;
+    text-align: center;
+}
+
+.below_name{
+    font-size: 20%;
+    text-align: center;
+}
+.profile_pic img{
+    max-width: 45vw;
+    max-height: 45vh;
+    border-radius: 400px;
+}
+
+.profile_description{
+    font-size: 20%;
+    font-weight: 300;
+    text-align: center;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.profile_description b{
+    font-weight: 600;
+    color: rgb(0, 213, 213);
+}
+
+/* Secion 2 */
+.education{
+    border: 2px solid #050829;
+    box-shadow: 2px 2px 8px rgb(9, 35, 35);
+    border-radius: 40px;
+    width: 45%;
+    height: 15%;
+    padding: 5%;
+    margin: 1%;
+    transition: transform .5s;
+}
+
+.education:hover{
+    box-shadow: 2px 2px 8px rgb(41, 226, 226);
+    transform: scale(1.2);
+}
+
+.collage{
+    transition: none !important;
+}
+
+.collage:hover{
+    box-shadow: 2px 2px 8px rgb(9, 35, 35);
+    transform: scale(1);
+}
+
+.school{
+    transition: none !important;
+}
+
+.school:hover{
+    box-shadow: 2px 2px 8px rgb(9, 35, 35) !important;
+    transform: scale(1) !important;
+}
+
+.edu_description{
+    font-size: 35%;
+    font-weight: 500;
+}
+
+.edu_date{
+    font-size: 20%;
+    font-weight: 300;
+}
+
+/* Section 3 */
+.skill_list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill_items{
+    margin: 2%;
+    font-size: 27%;
+    display: flex;
+    justify-content: center;
+}
+
+.skill_items img{
+    max-width: 7vw;
+    max-height: 12vh;
+    margin-right: 2%;
+}
+
+.progress_bar{
+    background-color: white;
+    width: 29vw;
+    height: 2vh;
+    border-radius: 40px;
+}
+
+.progress{
+    height: 2vh;
+    border-radius: 40px;
+    background-color: #6f42c1;
+}
+
+.html_progress{
+    width: 24vw;
+}
+.css_progress{
+    width: 24vw;
+}
+.javascript_progress{
+    width: 10vw;
+}
+.figma_progress{
+    width: 24vw;
+}
+.photoshop_progress{
+    width: 15vw;
+}
+.bootstrap_progress{
+    width: 24vw;
+}
+
+/* Section 5 */
+.contact_info{
+    display: flex;
+    flex-direction: column !important;
+    width: 80%;
+    height: 85%;
+}
+
+.contact_info a{
+    font-size: 20%;
+    color: #0ef;
+
+}
+
+.contact_icons{
+    font-size: 50%;
+    margin: 1.5%;
+
+}
+
+/* Footer */
+.cv_download{
+    border: 2px solid red;
+    width: 10vw;
+    height: 7vh;
+    background-color: red;
+    border-radius: 40px;
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    box-shadow: 2px 2px 60px #1429b3;
+    transition: .5s;
+}
+
+.cv_download:hover{
+    width: 11vw;
+    height: 8vh;
+    transition: .3s;
+}
+
+.cv_download i{
+    font-size: 150% impr !important;
+    margin-right: 5%;
+}
